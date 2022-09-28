@@ -20,7 +20,7 @@ spl_autoload_register(function($nome_arquivo)
     }
 
 });
-require 'homeController.php';
+require 'Controllers/homeController.php';
 
 //
 Class Core{
