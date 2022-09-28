@@ -1,5 +1,6 @@
 <?php
 error_reporting(0);
+require 'Core/Controller.php';
 Class Core{
     public function __construct()
     {

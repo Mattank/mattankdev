@@ -1,6 +1,5 @@
 <?php
 //Core Load
-require 'Core/Controller.php';
 require 'Core/Core.php';
 //Controllers Load
 require 'Controllers/homeController.php';
