@@ -1,0 +1,135 @@
+    :root {
+        --primary-color:#06DB01;
+        --primary-color-dark:#028A00;
+        --primary-color-light:#ABF000;
+        --secundary-color:#8C3CF2;
+        --third-color:#3013BD;
+        --gap:3rem;
+    }
+    *{
+
+        margin: 0;
+        padding: 0;
+    }
+    html{
+        font-size: 62.5%;
+    }
+    body{
+        font-family: 'Open Sans', sans-serif;
+        font-size: 2rem;
+        color:var(--third-color);
+    }
+    h1, h2, h3, h4, h5, h6{
+        font-family: 'Montserrat', sans-serif;
+    }
+    h1{
+        font-size: 6rem;
+        text-transform: uppercase;
+    }
+    h2{
+        font-size: 5.5rem;
+        
+    }
+    h3{
+        font-size: 5rem;
+        
+    }
+    h4{
+        font-size: 4.5rem;
+        
+    }
+    h5{
+        font-size: 4rem;
+        
+    }
+    h6{
+        font-size: 3.5rem;
+        
+    }
+    a{
+        text-decoration:none;
+    }
+    .main-bg{ 
+        background-image: url('../img/main-bg.png');
+        background-size: cover;
+        background-position: center center;
+        color:var(--secundary-color);
+    }
+    .sec-bg{
+        background-image: url('../img/sec-bg.png');
+        background-size: cover;
+        background-position: center center;
+    }
+    .main-content{
+        max-width: 120rem;
+        margin: 0 auto;
+        padding: var(--gap);
+
+    }
+    .section{
+        min-height: 93vh;
+    }
+    .menu-spacing{
+        height:6.5rem;
+    }
+    .menu{
+        background-color: white;
+        position: fixed;
+        width: 100%;
+        top:0;
+        left:0;
+        right:0;
+        border-bottom: 0.1rem solid var(--third-color);
+    }
+    .menu-content{
+        display:flex;
+        justify-content: space-between;
+        text-align: center;
+        padding-top:0;
+        padding-bottom:0;
+    }
+    .menu h1{
+        font-size: 2rem;
+        color:var(--third-color);
+        display:block;
+        padding: 2rem;
+    }
+    .menu h1 a{
+        color: inherit;
+    }
+    .menu ul{
+        list-style: none;
+        display: flex;
+    }
+    .menu ul li a{
+        display:block;
+        padding: 2rem;
+        font-size:1.8rem;
+        color: var(--third-color);
+        position:relative;
+    }
+    .menu ul li a::after{
+        content: '';
+        position: absolute;
+        bottom: 1rem;
+        left: 50%;
+        width:0;
+        height:0.2rem;
+        background:var(--third-color);
+        transition: all 300ms ease-in-out;
+    }
+    .menu ul li a:hover::after{
+        width: 50px;
+        left: 25px;
+    }
+    .intro-content{
+        display:grid;
+        grid-template-columns: 1fr 1fr;
+        gap:var(--gap);
+        height:87vh;
+    }
+    .intro-text-content{
+        display:flex;
+        flex-flow:column wrap;
+        justify-content: center;
+    }
