@@ -21,6 +21,8 @@ spl_autoload_register(function($nome_arquivo)
 
 });
 
+    require 'Core/core.php';
+
 $c = new Core();
 
 ?>
